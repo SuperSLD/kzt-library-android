@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/lesson_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.app_ui.common.view.ToolbarView
+            android:id="@+id/lesson_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <online.juter.supersld.view.input.form.JTFormView
+            android:id="@+id/lesson_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <com.example.app_ui.common.view.JTProgressBarColored
+        android:id="@+id/lesson_loading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

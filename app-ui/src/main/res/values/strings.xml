@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">RuNetSofts</string>
+
+    <!-- Авторизация -->
+    <string name="login_title">Добро\nпожаловать</string>
+    <string name="login_subtitle">Введите сой логин и присоединяйтесь к команте</string>
+    <string name="login_hint">Логин</string>
+    <string name="login_button">Войти</string>
+
+    <string name="pin_code_title">Введите пин-код</string>
+    <string name="pin_code_create_title">Придумайте пин-код</string>
+    <string name="pin_code_repeat_title">Повторите пин-код</string>
+
+    <string name="pin_success_title">Все отлично!</string>
+    <string name="pin_success_subtitle">Теперь вы готовы вливаться в коллектив и узнавать своих коллег.</string>
+    <string name="pin_success_button">Дальше</string>
+
+    <!-- Главная -->
+    <string name="tab_documents">Документы</string>
+    <string name="tab_chlellenges">Челленджи</string>
+    <string name="tab_central">Главная</string>
+    <string name="tab_education">Обучение</string>
+    <string name="tab_profile">Профиль</string>
+
+    <string name="central_title">Доброе утро</string>
+    <string name="central_subtitle">Сегодня вас ждет продуктивный день</string>
+    <string name="central_birthday">Дни рождения</string>
+    <string name="central_new_people">Новенькие</string>
+    <string name="central_ideas">Идеи</string>
+    <string name="central_new_courses">Новые курсы</string>
+    <string name="central_coins">У вас %1$s баллов</string>
+    <string name="central_coins_subtitle">Посмотрите на что вы их\nможете потратить</string>
+    <string name="central_challenges">Примите\nучастие в новых\nчелленжах\nот коллег</string>
+    <string name="central_news_title">Новости</string>
+    <string name="central_news_button">Больше новостей</string>
+
+    <string name="documents_title">Документы</string>
+    <string name="documents_requests">Заявления</string>
+    <string name="documents_deadline">Срок %1$s</string>
+    <string name="documents_need_sign">Нужна подпись</string>
+    <string name="documents_request_finish_title">Готово!</string>
+    <string name="documents_request_finish_subtitle">Заявление отправлено.\nСкоро готовые документы придут на подпись.</string>
+    <string name="documents_request_finish_button">Хорошо</string>
+    <string name="documents_open">Ознакомиться с документом</string>
+    <string name="documents_detail">Внимательно ознакомьтесь с документом перед тем как его подписывать</string>
+    <string name="documents_sign">Подписать</string>
+
+
+    <string name="education_title">Обучение</string>
+    <string name="education_new">Новое</string>
+    <string name="education_important">Важное</string>
+    <string name="course_count_checks">Пунктов\nвыполнено</string>
+    <string name="course_count_lessons">Уроков\nпройдено</string>
+    <string name="course_count_lesson_count">%1$d вопросов</string>
+    <string name="course_check_item_check_button">Пометить как выполненный</string>
+    <string name="course_check_item_back_button">Назад</string>
+    <string name="lesson_success">Урок пройден!</string>
+    <string name="lesson_success_count">Правильных\nответов</string>
+    <string name="lesson_failed">Урок не пройден</string>
+    <string name="lesson_failed_count">Количество\nошибок</string>
+    <string name="lesson_finish_button">Вернуться к курсу</string>
+
+    <string name="profile_ideas">Идеи</string>
+    <string name="profile_ideas_answer">Ответ:</string>
+
+    <string name="achivments_title">Достижения</string>
+    <string name="achivments_info">Получи все\nдостижения и\nзаработай награду</string>
+
+    <!-- Map -->
+    <string name="roadmap_navigation_error">Не удалось построить маршрут</string>
+    <string name="roadmap_navigation">Построить маршрут</string>
+    <string name="roadmap_steps">Пройти по шагам</string>
+    <string name="roadmap_time">%1$s минут в пути</string>
+    <string name="roadmap_distance">%1$s км.</string>
+    <string name="roadmap_search_room">Название места</string>
+
+    <string name="roadmap_steps_previous">Назад</string>
+    <string name="roadmap_steps_next">Далее</string>
+    <string name="roadmap_steps_finish">Завершить</string>
+
+
+    <string name="marker_info_done">Выбрано</string>
+    <string name="select_point_done">Готово</string>
+    <string name="select_room_back">Назад</string>
+
+    <string name="nav_title">Поиск маршрута</string>
+    <string name="nav_desk">Вы можете построить маршрут по карте, прямо до аудитории</string>
+    <string name="nav_a_title">Начало пути</string>
+    <string name="nav_a_desk">Выберите начало маршрута</string>
+    <string name="nav_b_title">Пункт назначения</string>
+    <string name="nav_b_desk">Выберите пункт назначения</string>
+
+    <string name="point_type_title">Добавление точки</string>
+    <string name="point_type_map">Точка на карте</string>
+    <string name="point_type_room">Место в офисе из списка</string>
+
+</resources>

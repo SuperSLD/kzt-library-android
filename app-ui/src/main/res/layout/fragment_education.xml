@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.example.app_ui.common.view.JTProgressBarColored
+        android:id="@+id/education_loading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="visible"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/education_nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:id="@+id/education_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:background="@color/colorBackSecondary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="24dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/education_title"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/education_new_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="24dp"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:layout_marginBottom="24dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clipToPadding="false"
+                android:background="@drawable/shape_white_top_corners"
+                android:clipChildren="false"
+                android:padding="24dp">
+
+                <online.juter.supersld.view.input.selectors.JTHorizontalSwitch
+                    android:id="@+id/education_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/education_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:layout_marginEnd="-8dp"
+                    android:paddingTop="16dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<online.juter.supersld.view.input.calendar.JTSquareLinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="12dp"
+    android:clipChildren="false">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/request_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/colorBack"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/request_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/request_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextPrimary"
+                android:fontFamily="@font/roboto_regular"
+                tools:text="Отпуск"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</online.juter.supersld.view.input.calendar.JTSquareLinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lock"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/pin_code_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/colorTextPrimary"
+        android:text="@string/pin_code_title"/>
+
+    <com.example.app_ui.common.view.PinDotsView
+        android:id="@+id/pin_code_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"/>
+
+    <com.example.app_ui.common.view.PinButtonsView
+        android:id="@+id/pin_code_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>

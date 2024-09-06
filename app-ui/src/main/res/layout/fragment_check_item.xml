@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/check_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <com.example.app_ui.common.view.ToolbarView
+            android:id="@+id/check_item_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/check_item_icon"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/check_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/colorTextPrimary"
+            android:padding="24dp"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/check_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/colorTextPrimary"
+            android:padding="18dp"
+            android:textSize="18sp"
+            android:text="@string/documents_detail"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/check_item_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="@string/course_check_item_check_button"
+            style="@style/ButtonSolid" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/check_item_button_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="@string/course_check_item_back_button"
+            style="@style/ButtonEmpty"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <com.example.app_ui.common.view.JTProgressBarColored
+        android:id="@+id/check_item_loading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

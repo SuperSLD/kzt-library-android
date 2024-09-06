@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/dots"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+            <TextView
+                android:id="@+id/cv1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorTextPrimary"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/cv2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:layout_marginHorizontal="40dp"
+                android:text="2"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorTextPrimary"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/cv3"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:text="3"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorTextPrimary"
+                android:foreground="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+            <TextView
+                android:id="@+id/cv4"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:text="4"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorTextPrimary"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/cv5"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:layout_marginHorizontal="40dp"
+                android:text="5"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorTextPrimary"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/cv6"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:text="6"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorTextPrimary"
+                android:foreground="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+            <TextView
+                android:id="@+id/cv7"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:text="7"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorTextPrimary"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/cv8"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:layout_marginHorizontal="40dp"
+                android:text="8"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorTextPrimary"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/cv9"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:text="9"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorTextPrimary"
+                android:foreground="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+            <View
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+
+            <TextView
+                android:id="@+id/cv0"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:layout_marginHorizontal="40dp"
+                android:text="0"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorTextPrimary"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <ImageView
+                android:id="@+id/cvDel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_del"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+
+    </LinearLayout>
+</LinearLayout>
