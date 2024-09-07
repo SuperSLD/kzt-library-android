@@ -55,7 +55,7 @@
     <string name="documents_sign">Подписать</string>
 
 
-    <string name="education_title">Обучение</string>
+    <string name="education_title">Квесты</string>
     <string name="education_new">Новое</string>
     <string name="education_important">Важное</string>
     <string name="course_count_checks">Пунктов\nвыполнено</string>
@@ -102,7 +102,7 @@
     <string name="select_room_back">Назад</string>
 
     <string name="nav_title">Поиск маршрута</string>
-    <string name="nav_desk">Вы можете построить маршрут по карте, прямо до аудитории</string>
+    <string name="nav_desk">Вы можете построить маршрут по карте, прямо до нужного вам места</string>
     <string name="nav_a_title">Начало пути</string>
     <string name="nav_a_desk">Выберите начало маршрута</string>
     <string name="nav_b_title">Пункт назначения</string>
@@ -110,6 +110,6 @@
 
     <string name="point_type_title">Добавление точки</string>
     <string name="point_type_map">Точка на карте</string>
-    <string name="point_type_room">Место в офисе из списка</string>
+    <string name="point_type_room">Место в библиотеке из списка</string>
 
 </resources>

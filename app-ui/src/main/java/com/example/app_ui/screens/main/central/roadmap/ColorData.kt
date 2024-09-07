@@ -14,7 +14,7 @@ fun Context.getMapColorData(
     return if (isDay) {
         RMColorData(
             buildingColor = Color.parseColor("#F1F1F1"),
-            buildingWithFloorsColor = Color.parseColor("#B9ADC9"),
+            buildingWithFloorsColor = Color.parseColor("#5B97A0"),
             backColor = back,
             navBorder = createColor(0, 0, 0),
             roadColors = listOf(
