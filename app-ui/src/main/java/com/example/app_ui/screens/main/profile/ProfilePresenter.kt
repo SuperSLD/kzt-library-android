@@ -2,7 +2,8 @@ package com.example.app_ui.screens.main.profile
 
 import com.arellomobile.mvp.InjectViewState
 import com.example.app_domain.controllers.BottomVisibilityController
-import com.example.app_domain.models.Idea
+import com.example.app_domain.models.Notification
+import com.example.app_domain.models.NotificationType
 import com.example.app_domain.models.user.Achivment
 import com.example.app_domain.usecases.user.GetProfileUseCase
 import com.example.app_ui.ext.createEmptyHandler
@@ -30,13 +31,15 @@ class ProfilePresenter : BasePresenter<ProfileView>() {
 
         loadProfile()
         viewState.showIdeas(listOf(
-            Idea(
-                text = "Предлагаю по пятницам проводить встречи с обсуждением макетов приложений, чтобы каждый мог высказаться и поучаствовать в процессе.",
-                answer = "Отличная идея, со следующего месяца перестроим процессы в команде."
+            Notification(
+                title = "Новые книги",
+                text = "В честь дня знаний мы увеличиваем нашу коллекцию научной литературы. Приходите за новыми книгами уже на следующей неделе.",
+                type = NotificationType.DEFAULT,
             ),
-            Idea(
-                text = "Предлагаю по пятницам проводить встречи с обсуждением макетов приложений, чтобы каждый мог высказаться и поучаствовать в процессе.",
-                answer = "Отличная идея, со следующего месяца перестроим процессы в команде."
+            Notification(
+                title = "Добро пожаловать!",
+                text = "В честь вашего присоединения к нашей семье мы дарим вам 125 лепестков, которые являются внутренней валютой",
+                type = NotificationType.DEFAULT,
             ),
         ))
     }

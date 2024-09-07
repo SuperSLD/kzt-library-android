@@ -21,14 +21,14 @@
     <string name="pin_code_repeat_title">Повторите пин-код</string>
 
     <string name="pin_success_title">Все отлично!</string>
-    <string name="pin_success_subtitle">Теперь вы готовы вливаться в коллектив и узнавать своих коллег.</string>
+    <string name="pin_success_subtitle">Добро пожаловать в библиотеку, желаем приятного чтения</string>
     <string name="pin_success_button">Дальше</string>
 
     <!-- Главная -->
-    <string name="tab_documents">Документы</string>
-    <string name="tab_chlellenges">Челленджи</string>
+    <string name="tab_documents">Мои книги</string>
+    <string name="tab_chlellenges">Клубы</string>
     <string name="tab_central">Главная</string>
-    <string name="tab_education">Обучение</string>
+    <string name="tab_education">Квесты</string>
     <string name="tab_profile">Профиль</string>
 
     <string name="central_title">Доброе утро</string>
@@ -69,7 +69,7 @@
     <string name="lesson_failed_count">Количество\nошибок</string>
     <string name="lesson_finish_button">Вернуться к курсу</string>
 
-    <string name="profile_ideas">Идеи</string>
+    <string name="profile_ideas">Уведомления</string>
     <string name="profile_ideas_answer">Ответ:</string>
 
     <string name="achivments_title">Достижения</string>

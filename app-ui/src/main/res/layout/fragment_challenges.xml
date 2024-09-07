@@ -13,7 +13,7 @@
         android:textSize="34sp"
         android:textColor="@color/colorTextPrimary"
         android:fontFamily="@font/roboto_bold"
-        android:text="Челленджи"/>
+        android:text="Клубы"/>
 
     <TextView
         android:layout_width="wrap_content"

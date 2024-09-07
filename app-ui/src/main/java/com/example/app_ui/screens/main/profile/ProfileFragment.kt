@@ -5,13 +5,13 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.bumptech.glide.Glide
-import com.example.app_domain.models.Idea
+import com.example.app_domain.models.Notification
 import com.example.app_domain.models.user.User
 import com.example.app_ui.R
 import com.example.app_ui.common.view.simplerecycler.SimpleRecyclerAdapter
 import com.example.app_ui.ext.setVisible
 import com.example.app_ui.screens.main.profile.holders.AchivmentViewHolder
-import com.example.app_ui.screens.main.profile.holders.IdeaViewHolder
+import com.example.app_ui.screens.main.profile.holders.NotificationViewHolder
 import kotlinx.android.synthetic.main.fragment_profile.*
 import com.example.app_ui.common.core.base.BaseFragment
 import com.example.app_ui.common.core.base.addSystemTopPadding
@@ -31,7 +31,7 @@ class ProfileFragment : BaseFragment(R.layout.fragment_profile), ProfileView {
     private val ideasAdapter by lazy {
         SimpleRecyclerAdapter(
             R.layout.viewholder_idea,
-            { IdeaViewHolder(it) },
+            { NotificationViewHolder(it) },
             { _, _ ->  },
         )
     }
@@ -56,7 +56,7 @@ class ProfileFragment : BaseFragment(R.layout.fragment_profile), ProfileView {
         presenter.onBack()
     }
 
-    override fun showIdeas(items: List<Idea>) {
+    override fun showIdeas(items: List<Notification>) {
         ideasAdapter.swapItems(items)
     }
 
