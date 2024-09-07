@@ -1,7 +1,9 @@
 package com.example.app_ui.screens.main
 
+import android.Manifest
 import android.os.Bundle
 import android.view.View
+import androidx.core.app.ActivityCompat
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationAdapter
 import com.example.app_ui.R
@@ -26,6 +28,12 @@ class MainContainerFragment : BaseFragment(R.layout.fragment_main_container), Ma
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         bottomNavigation.addSystemBottomPadding()
+
+        ActivityCompat.requestPermissions(
+            requireActivity(),
+            arrayOf(Manifest.permission.WRITE_CALENDAR, Manifest.permission.READ_CALENDAR),
+            101
+        )
     }
 
     override fun initBottomNavigation() {

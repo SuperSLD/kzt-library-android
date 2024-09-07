@@ -12,6 +12,7 @@ import com.example.app_domain.usecases.courses.FinishUseCase
 import com.example.app_domain.usecases.courses.GetCoursesUseCase
 import com.example.app_domain.usecases.documents.GetDocumentsContentUseCase
 import com.example.app_domain.usecases.documents.SendRequestUseCase
+import com.example.app_domain.usecases.join_event.JoinEventUseCase
 import com.example.app_domain.usecases.user.GetPinCodeUseCase
 import com.example.app_domain.usecases.user.GetProfileUseCase
 import com.example.app_domain.usecases.user.IsAuthUseCase
@@ -36,6 +37,7 @@ fun Module.provideDomainModules() {
     single { GetCentralUseCase(get()) }
     single { CheckUseCase(get()) }
     single { FinishUseCase(get()) }
+    single { JoinEventUseCase(get()) }
 }
 
 fun Module.provideControllers() {

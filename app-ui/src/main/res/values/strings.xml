@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RuNetSofts</string>
+    <string name="app_name">Книжная полка</string>
 
     <!-- Авторизация -->
     <string name="login_title">Добро\nпожаловать</string>
@@ -74,6 +74,15 @@
 
     <string name="achivments_title">Достижения</string>
     <string name="achivments_info">Получи все\nдостижения и\nзаработай награду</string>
+
+    <!-- Новости  -->
+    <string name="news_can_subscribe">Можно записаться</string>
+    <string name="news_subscribe_button">Записаться</string>
+    <string name="news_need_subscribe">Для участия нужно записаться</string>
+    <string name="news_event_date_text">Дата проведения:</string>
+
+    <string name="success_subscribe_add_to_calendar">Добавить в календарь</string>
+    <string name="success_description">Вы записались на мероприятие! Мы отправим вам напоминание ближе к дате начала</string>
 
     <!-- Map -->
     <string name="roadmap_navigation_error">Не удалось построить маршрут</string>
