@@ -77,147 +77,147 @@
 
             </LinearLayout>
 
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:background="@drawable/shape_white_rounded_16"-->
+<!--                android:layout_marginHorizontal="24dp"-->
+<!--                android:padding="16dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_weight="1">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="@color/colorTextSecondary"-->
+<!--                        android:fontFamily="@font/roboto_regular"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:text="@string/central_birthday"-->
+<!--                        android:layout_marginBottom="4dp"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="32sp"-->
+<!--                        android:fontFamily="@font/roboto_regular"-->
+<!--                        android:text="5"-->
+<!--                        app:drawableEndCompat="@drawable/ic_cake"-->
+<!--                        android:drawablePadding="8dp"-->
+<!--                        android:textColor="@color/colorTextPrimary" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="1dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@color/colorBorder"-->
+<!--                    android:layout_marginHorizontal="8dp"/>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_weight="1">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="@color/colorTextSecondary"-->
+<!--                        android:fontFamily="@font/roboto_regular"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:text="@string/central_new_people"-->
+<!--                        android:layout_marginBottom="4dp"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="32sp"-->
+<!--                        android:fontFamily="@font/roboto_regular"-->
+<!--                        android:text="5"-->
+<!--                        app:drawableEndCompat="@drawable/ic_perm_identity"-->
+<!--                        android:drawablePadding="8dp"-->
+<!--                        android:textColor="@color/colorTextPrimary" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="1dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@color/colorBorder"-->
+<!--                    android:layout_marginHorizontal="8dp"/>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_weight="1">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="@color/colorTextSecondary"-->
+<!--                        android:fontFamily="@font/roboto_regular"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:text="@string/central_ideas"-->
+<!--                        android:layout_marginBottom="4dp"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="32sp"-->
+<!--                        android:fontFamily="@font/roboto_regular"-->
+<!--                        android:text="5"-->
+<!--                        app:drawableEndCompat="@drawable/ic_fire"-->
+<!--                        android:drawablePadding="8dp"-->
+<!--                        android:textColor="@color/colorTextPrimary" />-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/shape_white_rounded_16"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginHorizontal="24dp">-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="@color/colorBorder"-->
+<!--                    android:layout_marginHorizontal="32dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:padding="16dp"-->
+<!--                    android:textColor="@color/colorTextPrimary"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:fontFamily="@font/roboto_regular"-->
+<!--                    android:text="@string/central_new_courses"-->
+<!--                    android:drawablePadding="16dp"-->
+<!--                    app:drawableStartCompat="@drawable/ic_grading"-->
+<!--                    app:drawableEndCompat="@drawable/ic_arrow_forward" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="16dp"-->
+<!--                android:layout_marginHorizontal="42dp"-->
+<!--                android:background="@drawable/shape_shadow"/>-->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="@drawable/shape_white_rounded_16"
-                android:layout_marginHorizontal="24dp"
-                android:padding="16dp">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorTextSecondary"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textSize="14sp"
-                        android:text="@string/central_birthday"
-                        android:layout_marginBottom="4dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="32sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:text="5"
-                        app:drawableEndCompat="@drawable/ic_cake"
-                        android:drawablePadding="8dp"
-                        android:textColor="@color/colorTextPrimary" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/colorBorder"
-                    android:layout_marginHorizontal="8dp"/>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorTextSecondary"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textSize="14sp"
-                        android:text="@string/central_new_people"
-                        android:layout_marginBottom="4dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="32sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:text="5"
-                        app:drawableEndCompat="@drawable/ic_perm_identity"
-                        android:drawablePadding="8dp"
-                        android:textColor="@color/colorTextPrimary" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/colorBorder"
-                    android:layout_marginHorizontal="8dp"/>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorTextSecondary"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textSize="14sp"
-                        android:text="@string/central_ideas"
-                        android:layout_marginBottom="4dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="32sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:text="5"
-                        app:drawableEndCompat="@drawable/ic_fire"
-                        android:drawablePadding="8dp"
-                        android:textColor="@color/colorTextPrimary" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/shape_white_rounded_16"
-                android:orientation="vertical"
-                android:layout_marginHorizontal="24dp">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorBorder"
-                    android:layout_marginHorizontal="32dp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="16dp"
-                    android:textColor="@color/colorTextPrimary"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/roboto_regular"
-                    android:text="@string/central_new_courses"
-                    android:drawablePadding="16dp"
-                    app:drawableStartCompat="@drawable/ic_grading"
-                    app:drawableEndCompat="@drawable/ic_arrow_forward" />
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="16dp"
-                android:layout_marginHorizontal="42dp"
-                android:background="@drawable/shape_shadow"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginHorizontal="24dp"
                 android:gravity="center_vertical"
                 android:background="@drawable/shape_gradient">
