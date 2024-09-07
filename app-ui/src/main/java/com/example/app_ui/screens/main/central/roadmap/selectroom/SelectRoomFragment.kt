@@ -44,7 +44,7 @@ class SelectRoomFragment : BaseFragment(R.layout.fragment_selectroom), MvpView {
             adapter = this@SelectRoomFragment.adapter
             layoutManager = LinearLayoutManager(context)
         }
-        adapter.addData(RMDataController.create("")!!.getMapFromCache()!!.getRooms())
+        adapter.addData(RMDataController.create("")!!.getMapFromCache()!!.getRooms().filter { it.name.isNotEmpty() })
     }
 
     override fun onBackPressed() {

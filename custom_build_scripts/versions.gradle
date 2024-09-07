@@ -44,5 +44,5 @@ ext.versions = [
 
         bottom_navigation         : '2.3.4',
 
-        roadmap                   : '0.2.11',
+        roadmap                   : '0.3.2',
 ]
