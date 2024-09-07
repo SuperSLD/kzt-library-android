@@ -21,7 +21,7 @@ class CentralFragment : BaseFragment(R.layout.fragment_central), CentralView {
         SimpleRecyclerAdapter(
             R.layout.viewholder_news,
             { NewsViewHolder(it) },
-            { item, _ ->  },
+            { item, _ -> presenter.onNewsClick(item) },
         )
     }
 

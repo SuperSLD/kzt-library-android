@@ -9,6 +9,7 @@
     <color name="colorTextPrimary">#292929</color>
     <color name="colorTextSecondary">#C9D0E3</color>
     <color name="colorTextWhite">#FFFFFF</color>
+    <color name="colorTextBlack">#000000</color>
 
     <color name="colorStatusBar">#0023213C</color>
     <color name="colorNavigationBar">#001F1A39</color>
@@ -25,4 +26,6 @@
 
     <color name="negativeButtonTextColor">#FB5020</color>
     <color name="colorPositiveMemberStatus">#BEFF7D</color>
+
+    <color name="colorCardItemBackground">#3B5771</color>
 </resources>
