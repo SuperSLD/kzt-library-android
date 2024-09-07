@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.fragment_nav.*
 import online.jutter.roadmapview.data.models.map.RMMarker
 import com.example.app_ui.common.core.base.BaseFragment
 import com.example.app_ui.common.core.base.addSystemTopAndBottomPadding
+import online.jutter.roadmapview.extensions.createColor
 
 class NavigationFragment : BaseFragment(R.layout.fragment_nav), NavigationView {
 
@@ -34,7 +35,7 @@ class NavigationFragment : BaseFragment(R.layout.fragment_nav), NavigationView {
             setDescription(getString(R.string.nav_a_desk))
             setSymbol("A")
             setColor("#F2514B", getMapColorData(
-                back = Color.rgb(248, 248, 248)
+                back = createColor(248, 248, 248)
             ))
             onClick {
                 presenter.onSelectStart()
@@ -46,7 +47,7 @@ class NavigationFragment : BaseFragment(R.layout.fragment_nav), NavigationView {
             setDescription(getString(R.string.nav_b_desk))
             setSymbol("Б")
             setColor("#636363", getMapColorData(
-                back = Color.rgb(248, 248, 248)
+                back = createColor(248, 248, 248)
             ))
             onClick {
                 presenter.onSelectEnd()

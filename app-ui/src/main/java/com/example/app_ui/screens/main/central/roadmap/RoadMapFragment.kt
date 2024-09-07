@@ -49,6 +49,7 @@ class RoadMapFragment : BaseFragment(R.layout.fragment_road_map), RoadMapView {
         with(mapView) {
             setColorData(getMapColorData())
             setMaxZoom(0.04773629F)
+            setStructureZoom(0.006428921F)
             onLoad { toggleMapLoading(false) }
             onLoadError { showErrorMapLoading() }
             onFloorCountUpdate {
