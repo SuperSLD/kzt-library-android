@@ -57,7 +57,7 @@ class EducationFragment : BaseFragment(R.layout.fragment_education), EducationVi
                     textColorSelected = "#FFFFFF",
                     corners = 12,
                     borderColor = "#F1F3F8",
-                    backColorSelected = "#7046DC",
+                    backColorSelected = "#16545E",
                     backColor = "#F1F3F8",
                 )
             )

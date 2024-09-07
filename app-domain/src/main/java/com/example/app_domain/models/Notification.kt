@@ -1,15 +1,10 @@
 package com.example.app_domain.models
 
+import com.example.app_domain.models.central.News
+
 data class Notification(
     val title: String,
     val text: String,
-    val type: NotificationType,
-    val bockId: String? = null,
-    val eventId: String? = null,
+    val type: String,
+    val event: News? = null,
 )
-
-enum class NotificationType {
-    DEFAULT,
-    EVENT,
-    BOCK,
-}
