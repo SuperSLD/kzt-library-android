@@ -1,9 +1,13 @@
-package com.example.data.net.endpoints.user
+package com.example.app_data.net.endpoints.user
 
 data class LoginRequest(
     val login: String,
 )
 
-data class AuthResponse(
-    val token: String,
+data class RegistrationRequest(
+    val login: String,
+    val name: String,
+    val lastName: String,
+    val midName: String,
+    val avatar: String?
 )

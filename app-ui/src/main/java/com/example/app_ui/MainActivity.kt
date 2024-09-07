@@ -1,16 +1,16 @@
 package com.example.app_ui
 
 import androidx.fragment.app.Fragment
+import com.example.app_ui.common.core.base.ActivityBase
 import com.example.app_ui.screens.global.FlowGlobalScreen
 import online.jutter.roadmapview.RMMapView
-import com.example.app_ui.common.core.base.ActivityBase
 
 class MainActivity : ActivityBase() {
 
     override fun getStartFragment() = FlowGlobalScreen().fragment
 
     override fun getStatusAndNavigationColor(): Pair<Int, Int> {
-        RMMapView.setApiKey("755ceb95-82d1-45e7-9e5e-8bd926364cf8")
+        RMMapView.setApiKey("4c2bd9ec-f02f-4c2e-be8d-5f5c79addd36")
         return Pair(R.color.colorStatusBar, R.color.colorNavigationBar)
     }
 

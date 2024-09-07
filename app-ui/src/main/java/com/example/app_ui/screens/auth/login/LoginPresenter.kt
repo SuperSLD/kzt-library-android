@@ -2,12 +2,13 @@ package com.example.app_ui.screens.auth.login
 
 import com.arellomobile.mvp.InjectViewState
 import com.example.app_domain.usecases.user.LoginUseCase
+import com.example.app_ui.common.core.base.launchUI
+import com.example.app_ui.common.core.base.withIO
 import com.example.app_ui.ext.createHandler
 import com.example.app_ui.screens.auth.pincode.PinCodeScreen
 import com.example.app_ui.screens.auth.pincode.PinCodeScreenMode
+import com.example.app_ui.screens.registration.RegistrationScreen
 import online.jutter.supersld.common.base.BasePresenter
-import com.example.app_ui.common.core.base.launchUI
-import com.example.app_ui.common.core.base.withIO
 import org.koin.core.inject
 
 @InjectViewState
@@ -21,8 +22,12 @@ class LoginPresenter : BasePresenter<LoginView>() {
             viewState.toggleLoading(false)
         }) {
             viewState.toggleLoading(true)
-            withIO { loginUseCase(login) }
-            router?.navigateTo(PinCodeScreen(mode = PinCodeScreenMode.CREATE))
+            val authResponse = withIO { loginUseCase(login) }
+            if (authResponse.isRegistered) {
+                router?.navigateTo(PinCodeScreen(mode = PinCodeScreenMode.CREATE))
+            } else {
+                router?.navigateTo(RegistrationScreen(login))
+            }
         }
     }
 

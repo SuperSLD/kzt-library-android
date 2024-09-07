@@ -3,9 +3,18 @@
 
     <!-- Авторизация -->
     <string name="login_title">Добро\nпожаловать</string>
-    <string name="login_subtitle">Введите сой логин и присоединяйтесь к команте</string>
-    <string name="login_hint">Логин</string>
+    <string name="login_subtitle">Введите свой номер телефона</string>
+    <string name="login_hint">Номер телефона</string>
     <string name="login_button">Войти</string>
+
+    <!--Регистрация-->
+    <string name="registration_title">Регистрация</string>
+    <string name="registration_subtitle">Давайте знакомиться! Расскажите нам о себе, чтобы начать читать</string>
+    <string name="name_hint">Имя</string>
+    <string name="lastname_hint">Фамилия</string>
+    <string name="mid_name_hint">Отчество</string>
+    <string name="avatar_hint">Ссылка на аватар</string>
+    <string name="registration_button">Создать профиль</string>
 
     <string name="pin_code_title">Введите пин-код</string>
     <string name="pin_code_create_title">Придумайте пин-код</string>
