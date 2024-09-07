@@ -14,7 +14,7 @@
     <item
         android:id="@+id/tab_central"
         android:title="@string/tab_central"
-        android:icon="@drawable/ic_main"/>
+        android:icon="@drawable/ic_eco"/>
 
     <item
         android:id="@+id/tab_education"

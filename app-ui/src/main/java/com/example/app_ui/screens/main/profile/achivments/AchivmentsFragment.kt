@@ -14,6 +14,7 @@ import com.example.app_ui.screens.main.profile.achivments.achivmentdetail.Achivm
 import com.example.app_ui.screens.main.profile.holders.AchivmentViewHolder
 import kotlinx.android.synthetic.main.fragment_achivments.*
 import com.example.app_ui.common.core.base.BaseFragment
+import com.example.app_ui.common.core.base.addSystemBottomPadding
 
 class AchivmentsFragment : BaseFragment(R.layout.fragment_achivments), AchivmentsView {
 
@@ -46,6 +47,8 @@ class AchivmentsFragment : BaseFragment(R.layout.fragment_achivments), Achivment
             title = getString(R.string.achivments_title),
             back = this::onBackPressed
         )
+
+        nested.addSystemBottomPadding()
 
         with(achivments_recycler) {
             adapter = achivmentsAdapter
