@@ -11,4 +11,6 @@ interface RegistrationView: MvpView {
 
     @StateStrategyType(SkipStrategy::class)
     fun showErrorToast(text: String)
+
+    fun toggleButtonEnabled(isEnabled: Boolean)
 }

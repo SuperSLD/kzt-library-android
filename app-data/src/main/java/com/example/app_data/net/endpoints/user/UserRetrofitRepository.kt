@@ -21,7 +21,7 @@ class UserRetrofitRepository(
         lastName: String,
         midName: String,
         avatar: String?
-    ): String =
+    ): String? =
         service.register(RegistrationRequest(login, name, lastName, midName, avatar)).dataOrThrow()!!.token
 
 

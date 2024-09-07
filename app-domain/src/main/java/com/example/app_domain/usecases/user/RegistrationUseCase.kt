@@ -14,9 +14,8 @@ class RegistrationUseCase(
         lastName: String,
         midName: String,
         avatar: String?
-    ): String {
+    ) {
         val token = userNetRepository.register(login, name, lastName, midName, avatar)
-        configRepository.putValue(ConfigKey.AUTH_TOKEN, token)
-        return token
+        token?.let {  configRepository.putValue(ConfigKey.AUTH_TOKEN, it) }
     }
 }

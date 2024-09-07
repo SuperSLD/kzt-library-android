@@ -12,7 +12,7 @@ class LoginUseCase(
 
     suspend operator fun invoke(login: String): AuthResponse {
         val authResponse = userNetRepository.login(login)
-        configRepository.putValue(ConfigKey.AUTH_TOKEN, authResponse.token)
+        authResponse.token?.let {  configRepository.putValue(ConfigKey.AUTH_TOKEN, authResponse.token) }
         return authResponse
     }
 }

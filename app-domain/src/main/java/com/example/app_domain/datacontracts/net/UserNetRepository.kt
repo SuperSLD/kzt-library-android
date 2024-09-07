@@ -13,7 +13,7 @@ interface UserNetRepository {
         lastName: String,
         midName: String,
         avatar: String?
-    ): String
+    ): String?
 
     suspend fun getInfo(): User
 }

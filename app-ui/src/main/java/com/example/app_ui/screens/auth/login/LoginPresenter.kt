@@ -23,7 +23,7 @@ class LoginPresenter : BasePresenter<LoginView>() {
         }) {
             viewState.toggleLoading(true)
             val authResponse = withIO { loginUseCase(login) }
-            if (authResponse.isRegistered) {
+            if (authResponse.registered) {
                 router?.navigateTo(PinCodeScreen(mode = PinCodeScreenMode.CREATE))
             } else {
                 router?.navigateTo(RegistrationScreen(login))

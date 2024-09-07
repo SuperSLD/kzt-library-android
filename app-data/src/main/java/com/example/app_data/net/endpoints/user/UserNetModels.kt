@@ -7,7 +7,7 @@ data class LoginRequest(
 data class RegistrationRequest(
     val login: String,
     val name: String,
-    val lastName: String,
-    val midName: String,
+    val lastname: String,
+    val midname: String,
     val avatar: String?
 )

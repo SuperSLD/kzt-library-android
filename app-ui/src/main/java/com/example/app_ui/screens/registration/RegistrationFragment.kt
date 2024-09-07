@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.core.os.bundleOf
 import com.arellomobile.mvp.presenter.InjectPresenter
+import com.arellomobile.mvp.presenter.ProvidePresenter
 import com.example.app_ui.R
 import com.example.app_ui.common.ARG_KEY_SCREEN_PARAMS
 import com.example.app_ui.common.core.base.BaseFragment
@@ -26,33 +27,36 @@ class RegistrationFragment: BaseFragment(R.layout.fragment_registration), Regist
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var name = ""
-        var lastName = ""
-        var midName = ""
-        var avatar: String? = null
+        setOnTextListener()
 
+        registration_button.setOnClickListener {
+            presenter.onRegistration(
+                name_edit_text.text.toString(),
+                lastname_edit_text.text.toString(),
+                mid_name_edit_text.text.toString(),
+                avatar_edit_text.text.toString()
+            )
+        }
+    }
+
+    private fun setOnTextListener() {
         name_edit_text.textChanged {
-            name = it
+            presenter.onNameChange(it)
         }
 
         lastname_edit_text.textChanged {
-            lastName = it
+            presenter.onLastnameChange(it)
         }
 
         mid_name_edit_text.textChanged {
-            midName = it
-        }
-
-        avatar_edit_text.textChanged {
-            if (it.isNotEmpty()) avatar = it
-        }
-
-        registration_button.isEnabled = name.isNotEmpty() && lastName.isNotEmpty() && midName.isNotEmpty()
-
-        registration_button.setOnClickListener {
-            presenter.onRegistration(name, lastName, midName, avatar)
+            presenter.onMidNameChange(it)
         }
     }
+
+    @ProvidePresenter
+    fun providePresenter() = RegistrationPresenter(
+        requireArguments().getSerializable(ARG_KEY_SCREEN_PARAMS) as RegistrationScreen,
+    )
 
     override fun onBackPressed() {
         presenter.onBack()
@@ -65,6 +69,10 @@ class RegistrationFragment: BaseFragment(R.layout.fragment_registration), Regist
 
     override fun showErrorToast(text: String) {
         Toast.makeText(context, text, Toast.LENGTH_SHORT).show()
+    }
+
+    override fun toggleButtonEnabled(isEnabled: Boolean) {
+        registration_button.isEnabled = isEnabled
     }
 
     companion object {
