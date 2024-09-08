@@ -8,7 +8,7 @@ import com.arellomobile.mvp.presenter.InjectPresenter
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationAdapter
 import com.example.app_ui.R
 import com.example.app_ui.screens.main.central.FlowCentralScreen
-import com.example.app_ui.screens.main.challenges.FlowChallengesScreen
+import com.example.app_ui.screens.main.sections.FlowChallengesScreen
 import com.example.app_ui.screens.main.documents.FlowDocumentsScreen
 import com.example.app_ui.screens.main.education.FlowEducationScreen
 import com.example.app_ui.screens.main.profile.FlowProfileScreen

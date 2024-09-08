@@ -5,6 +5,7 @@ import com.example.app_data.net.endpoints.central.CentralRetrofitRepository
 import com.example.app_data.net.endpoints.courses.CoursesRetrofitRepository
 import com.example.app_data.net.endpoints.documents.DocumentsRetrofitRepository
 import com.example.app_data.net.endpoints.join_event.JoinEventRetrofitRepository
+import com.example.app_data.net.endpoints.sections.SectionsRetrofitRepository
 import com.example.app_data.net.endpoints.user.UserRetrofitRepository
 import com.example.app_data.net.retrofit.AuthTokenInterceptor
 import com.example.app_data.net.retrofit.RetrofitFactory
@@ -13,6 +14,7 @@ import com.example.app_domain.datacontracts.net.CentralNetRepository
 import com.example.app_domain.datacontracts.net.CoursesNetRepository
 import com.example.app_domain.datacontracts.net.DocumentsNetRepository
 import com.example.app_domain.datacontracts.net.JoinEventNetRepository
+import com.example.app_domain.datacontracts.net.SectionsNetRepository
 import com.example.app_domain.datacontracts.net.UserNetRepository
 import okhttp3.Interceptor
 import org.koin.core.module.Module
@@ -39,6 +41,10 @@ fun Module.provideNetModules(baseUrl: String) {
 
     single<JoinEventNetRepository> {
         JoinEventRetrofitRepository(get())
+    }
+
+    single<SectionsNetRepository> {
+        SectionsRetrofitRepository(get())
     }
 
     single<BookNetRepository> {

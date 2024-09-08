@@ -1,4 +1,4 @@
-package com.example.app_ui.screens.main.challenges
+package com.example.app_ui.screens.main.sections
 
 import android.os.Bundle
 import android.view.View
@@ -19,7 +19,7 @@ class FlowChallengesFragment : FlowFragment(ROUTER) {
             navigator.applyCommands(
                 arrayOf(
                     BackTo(null),
-                    Replace(ChallengesScreen())
+                    Replace(SectionsScreen())
                 )
             )
         }

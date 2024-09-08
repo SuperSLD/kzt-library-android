@@ -269,7 +269,6 @@
                 android:gravity="center_vertical"
                 android:drawablePadding="16dp"
                 app:drawableStartCompat="@drawable/ic_victory"
-                app:drawableEndCompat="@drawable/ic_arrow_forward"
                 android:background="@drawable/shape_dark_rounded_16"
                 android:layout_marginTop="24dp"
                 android:layout_marginHorizontal="24dp"/>
