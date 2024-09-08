@@ -19,7 +19,7 @@ class FlowDocumentsFragment : FlowFragment(ROUTER) {
             navigator.applyCommands(
                 arrayOf(
                     BackTo(null),
-                    Replace(DocumentsScreen())
+                    Replace(BooksScreen())
                 )
             )
         }

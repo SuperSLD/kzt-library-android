@@ -10,6 +10,7 @@
     <color name="colorTextSecondary">#C9D0E3</color>
     <color name="colorTextWhite">#FFFFFF</color>
     <color name="colorTextBlack">#000000</color>
+    <color name="colorTextSubtitle">#A5A5A5</color>
 
     <color name="colorStatusBar">#0023213C</color>
     <color name="colorNavigationBar">#001F1A39</color>

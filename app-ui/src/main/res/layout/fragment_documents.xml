@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -23,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
+            android:clipChildren="false"
             android:background="@color/colorBackSecondary">
 
             <TextView
@@ -32,15 +32,17 @@
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="24sp"
                 android:fontFamily="@font/roboto_bold"
-                android:text="@string/documents_title"/>
+                android:text="@string/books_title"/>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/documents_recycler"
+                android:id="@+id/my_books_recycler"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:nestedScrollingEnabled="false"
-                android:layout_marginHorizontal="24dp"
-                />
+                android:paddingHorizontal="20dp"
+                android:clipToPadding="false"
+                android:layout_marginBottom="8dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,24 +52,22 @@
                 android:background="@drawable/shape_white_top_corners"
                 android:clipChildren="false">
 
-                <TextView
+                <online.juter.supersld.view.input.selectors.JTHorizontalSwitch
+                    android:id="@+id/books_switch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorTextPrimary"
-                    android:fontFamily="@font/roboto_regular"
-                    android:text="@string/documents_requests"
-                    android:textSize="18sp"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginHorizontal="24dp" />
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"/>
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/documents_requests_recycler"
+                    android:id="@+id/books_recommendation_recycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:nestedScrollingEnabled="false"
+                    android:paddingHorizontal="20dp"
+                    android:layout_marginBottom="16dp"
                     android:clipChildren="false"
-                    android:clipToPadding="false"
-                    android:padding="12dp"/>
+                    android:clipToPadding="false" />
 
             </LinearLayout>
 

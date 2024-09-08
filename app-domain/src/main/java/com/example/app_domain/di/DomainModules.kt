@@ -6,6 +6,9 @@ import com.example.app_domain.controllers.NavigationController
 import com.example.app_domain.controllers.PointTypeController
 import com.example.app_domain.controllers.SelectMarkerController
 import com.example.app_domain.controllers.SelectRoomController
+import com.example.app_domain.usecases.book.GetBooksContentUseCase
+import com.example.app_domain.usecases.book.OrderBookUseCase
+import com.example.app_domain.usecases.book.RenewBookUseCase
 import com.example.app_domain.usecases.central.GetCentralUseCase
 import com.example.app_domain.usecases.courses.CheckUseCase
 import com.example.app_domain.usecases.courses.FinishUseCase
@@ -38,6 +41,9 @@ fun Module.provideDomainModules() {
     single { CheckUseCase(get()) }
     single { FinishUseCase(get()) }
     single { JoinEventUseCase(get()) }
+    single { GetBooksContentUseCase(get()) }
+    single { OrderBookUseCase(get()) }
+    single { RenewBookUseCase(get()) }
 }
 
 fun Module.provideControllers() {

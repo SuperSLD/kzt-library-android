@@ -43,7 +43,7 @@
     <string name="central_news_title">Новости</string>
     <string name="central_news_button">Больше новостей</string>
 
-    <string name="documents_title">Документы</string>
+    <string name="books_title">Мои книги</string>
     <string name="documents_requests">Заявления</string>
     <string name="documents_deadline">Срок %1$s</string>
     <string name="documents_need_sign">Нужна подпись</string>
@@ -83,6 +83,12 @@
 
     <string name="success_subscribe_add_to_calendar">Добавить в календарь</string>
     <string name="success_description">Вы записались на мероприятие! Мы отправим вам напоминание ближе к дате начала</string>
+
+    <!-- Книги   -->
+    <string name="book_order">Забронировать</string>
+    <string name="book_renewal">Продлить</string>
+    <string name="book_auto_renewal">Продлить</string>
+    <string name="book_switch_text">Включить авто продление</string>
 
     <!-- Map -->
     <string name="roadmap_navigation_error">Не удалось построить маршрут</string>
