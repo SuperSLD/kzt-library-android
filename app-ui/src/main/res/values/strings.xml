@@ -118,4 +118,7 @@
     <string name="point_type_map">Точка на карте</string>
     <string name="point_type_room">Место в библиотеке из списка</string>
 
+    <string name="sections_title">Клубы по интересам</string>
+    <string name="sections_link_button">Пройти по ссылке</string>
+
 </resources>

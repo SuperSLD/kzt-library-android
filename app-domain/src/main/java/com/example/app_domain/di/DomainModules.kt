@@ -6,6 +6,7 @@ import com.example.app_domain.controllers.NavigationController
 import com.example.app_domain.controllers.PointTypeController
 import com.example.app_domain.controllers.SelectMarkerController
 import com.example.app_domain.controllers.SelectRoomController
+import com.example.app_domain.usecases.sections.GetSectionsUseCase
 import com.example.app_domain.usecases.book.GetBooksContentUseCase
 import com.example.app_domain.usecases.book.OrderBookUseCase
 import com.example.app_domain.usecases.book.RenewBookUseCase
@@ -41,6 +42,7 @@ fun Module.provideDomainModules() {
     single { CheckUseCase(get()) }
     single { FinishUseCase(get()) }
     single { JoinEventUseCase(get()) }
+    single { GetSectionsUseCase(get()) }
     single { GetBooksContentUseCase(get()) }
     single { OrderBookUseCase(get()) }
     single { RenewBookUseCase(get()) }
