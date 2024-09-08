@@ -10,6 +10,7 @@ import com.example.app_domain.models.sections.Section
 import com.example.app_ui.R
 import com.example.app_ui.common.ARG_KEY_SCREEN_PARAMS
 import com.example.app_ui.common.core.base.BaseFragment
+import com.example.app_ui.common.core.base.addSystemTopAndBottomPadding
 import com.example.app_ui.common.core.base.addSystemTopPadding
 import kotlinx.android.synthetic.main.fragment_section_detail.author
 import kotlinx.android.synthetic.main.fragment_section_detail.avatarImage
@@ -40,7 +41,7 @@ class SectionDetailFragment : BaseFragment(R.layout.fragment_section_detail), Se
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         cvBack.setOnClickListener { onBackPressed() }
-        nested.addSystemTopPadding()
+        nested.addSystemTopAndBottomPadding()
     }
 
     override fun onBackPressed() {
