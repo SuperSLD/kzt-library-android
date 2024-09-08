@@ -73,6 +73,9 @@ dependencies {
     // Gson
     implementation "com.google.code.gson:gson:$versions.gson"
 
+    //QR-scan
+    implementation 'com.google.android.gms:play-services-code-scanner:16.1.0'
+
     //Glide
     implementation "com.github.bumptech.glide:glide:$versions.glide"
     annotationProcessor "com.github.bumptech.glide:compiler:$versions.glide"
