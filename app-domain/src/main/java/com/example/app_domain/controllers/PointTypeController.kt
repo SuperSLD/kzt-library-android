@@ -11,4 +11,5 @@ class PointTypeController {
 enum class PointType {
     ROOM,
     MAP,
+    QR,
 }

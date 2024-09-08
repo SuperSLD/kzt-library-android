@@ -6,7 +6,9 @@ import com.arellomobile.mvp.MvpView
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.example.app_ui.R
 import com.example.app_ui.common.MvpBottomSheetDialogFragment
-import kotlinx.android.synthetic.main.bs_point_type.*
+import kotlinx.android.synthetic.main.bs_point_type.btnMap
+import kotlinx.android.synthetic.main.bs_point_type.btnQr
+import kotlinx.android.synthetic.main.bs_point_type.btnRoom
 
 class PointTypeBSFragment : MvpBottomSheetDialogFragment(R.layout.bs_point_type), MvpView {
 
@@ -22,6 +24,10 @@ class PointTypeBSFragment : MvpBottomSheetDialogFragment(R.layout.bs_point_type)
         }
         btnRoom.setOnClickListener {
             presenter.roomPoint()
+            dismiss()
+        }
+        btnQr.setOnClickListener {
+            presenter.qrPoint()
             dismiss()
         }
     }

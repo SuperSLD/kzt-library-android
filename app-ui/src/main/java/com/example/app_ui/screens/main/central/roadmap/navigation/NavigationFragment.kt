@@ -1,15 +1,20 @@
 package com.example.app_ui.screens.main.central.roadmap.navigation
-import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.example.app_ui.R
-import com.example.app_ui.screens.main.central.roadmap.getMapColorData
-import com.example.app_ui.screens.main.central.roadmap.navigation.pointtype.PointTypeBSFragment
-import kotlinx.android.synthetic.main.fragment_nav.*
-import online.jutter.roadmapview.data.models.map.RMMarker
 import com.example.app_ui.common.core.base.BaseFragment
 import com.example.app_ui.common.core.base.addSystemTopAndBottomPadding
+import com.example.app_ui.screens.main.central.roadmap.getMapColorData
+import com.example.app_ui.screens.main.central.roadmap.navigation.pointtype.PointTypeBSFragment
+import com.google.mlkit.vision.codescanner.GmsBarcodeScanning
+import kotlinx.android.synthetic.main.fragment_nav.btnDone
+import kotlinx.android.synthetic.main.fragment_nav.icBack
+import kotlinx.android.synthetic.main.fragment_nav.navContainer
+import kotlinx.android.synthetic.main.fragment_nav.vMarkerEnd
+import kotlinx.android.synthetic.main.fragment_nav.vMarkerStart
+import online.jutter.roadmapview.RMDataController
+import online.jutter.roadmapview.data.models.map.RMMarker
 import online.jutter.roadmapview.extensions.createColor
 
 class NavigationFragment : BaseFragment(R.layout.fragment_nav), NavigationView {
@@ -73,6 +78,22 @@ class NavigationFragment : BaseFragment(R.layout.fragment_nav), NavigationView {
     override fun addEndMarker(marker: RMMarker) {
         vMarkerEnd.addMarker(marker)
         updateButtonState()
+    }
+
+    override fun useQr() {
+        val scanner = GmsBarcodeScanning.getClient(requireContext())
+
+        scanner.startScan()
+            .addOnSuccessListener { barcode ->
+                val room = RMDataController.create("")!!.getMapFromCache()!!.getRooms().find { it.id == barcode.displayValue }
+                room?.let { presenter.addRoom(it) }
+            }
+            .addOnCanceledListener {
+                // Task canceled
+            }
+            .addOnFailureListener { e ->
+                // Task failed with an exception
+            }
     }
 
     private fun updateButtonState() {

@@ -13,4 +13,5 @@ class PointTypeBSPresenter : BasePresenter<MvpView>() {
 
     fun mapPoint() = pointTypeController.select(PointType.MAP)
     fun roomPoint() = pointTypeController.select(PointType.ROOM)
+    fun qrPoint() = pointTypeController.select(PointType.QR)
 }

@@ -2,11 +2,17 @@ package com.example.app_ui.screens.main.central.roadmap.navigation
 
 import android.graphics.Color
 import com.arellomobile.mvp.InjectViewState
-import com.example.app_domain.controllers.*
+import com.example.app_domain.controllers.BottomVisibilityController
+import com.example.app_domain.controllers.NavigationController
+import com.example.app_domain.controllers.PointType
+import com.example.app_domain.controllers.PointTypeController
+import com.example.app_domain.controllers.SelectMarkerController
+import com.example.app_domain.controllers.SelectRoomController
 import com.example.app_ui.R
 import com.example.app_ui.screens.main.central.roadmap.selectpoint.SelectPointScreen
 import com.example.app_ui.screens.main.central.roadmap.selectroom.SelectRoomScreen
 import online.jutter.roadmapview.data.models.map.RMMarker
+import online.jutter.roadmapview.data.models.map.RMRoom
 import online.jutter.supersld.common.base.BasePresenter
 import org.koin.core.inject
 
@@ -55,77 +61,83 @@ class NavigationPresenter : BasePresenter<NavigationView>() {
         pointTypeController.state
             .listen {
                 selectRoom = it == PointType.ROOM
-                if (it  == PointType.MAP) {
-                    if (isStartMarker) {
-                        router?.navigateTo(
-                            SelectPointScreen(
-                                "start",
-                                R.string.nav_a_title,
-                                R.string.nav_a_desk,
-                                "А",
-                                "#F2514B",
+                when(it) {
+                    PointType.MAP -> {
+                        if (isStartMarker) {
+                            router?.navigateTo(
+                                SelectPointScreen(
+                                    "start",
+                                    R.string.nav_a_title,
+                                    R.string.nav_a_desk,
+                                    "А",
+                                    "#F2514B",
+                                )
                             )
-                        )
-                    } else {
-                        router?.navigateTo(
-                            SelectPointScreen(
-                                "end",
-                                R.string.nav_b_title,
-                                R.string.nav_b_desk,
-                                "Б",
-                                "#636363",
+                        } else {
+                            router?.navigateTo(
+                                SelectPointScreen(
+                                    "end",
+                                    R.string.nav_b_title,
+                                    R.string.nav_b_desk,
+                                    "Б",
+                                    "#636363",
+                                )
                             )
-                        )
+                        }
                     }
-                } else {
-                    router?.navigateTo(SelectRoomScreen())
+                    PointType.ROOM -> router?.navigateTo(SelectRoomScreen())
+                    PointType.QR -> viewState.useQr()
                 }
             }.connect()
     }
 
     private fun listenMarker() {
         selectMarkerController.state
-            .listen {
-                it.name = "Точка " + if (isStartMarker) "А" else "Б"
+            .listen { marker ->
+                marker.name = "Точка " + if (isStartMarker) "А" else "Б"
                 navigationController.clearData()
                 if (isStartMarker) {
-                    viewState.addStartMarker(it)
+                    viewState.addStartMarker(marker)
                 } else {
-                    viewState.addEndMarker(it)
+                    viewState.addEndMarker(marker)
                 }
             }.connect()
     }
 
     private fun listenRoom() {
             selectRoomController.state.listen {
-                if (isStartMarker) {
-                    viewState.addStartMarker(
-                        RMMarker(
-                            id = "start",
-                            symbol = "A",
-                            x = it.position.x.toFloat(),
-                            y = it.position.y.toFloat(),
-                            floor = it.position.floor,
-                            color = Color.parseColor("#F2514B"),
-                            textColor = Color.parseColor("#FFFFFF"),
-                            name = it.name,
-                        )
-                    )
-                } else {
-                    viewState.addEndMarker(
-                        RMMarker(
-                            id = "end",
-                            symbol = "Б",
-                            x = it.position.x.toFloat(),
-                            y = it.position.y.toFloat(),
-                            floor = it.position.floor,
-                            color = Color.parseColor("#636363"),
-                            textColor = Color.parseColor("#FFFFFF"),
-                            name = it.name,
-                        )
-                    )
-                }
+                addRoom(it)
             }
+    }
+
+    fun addRoom(room: RMRoom) {
+        if (isStartMarker) {
+            viewState.addStartMarker(
+                RMMarker(
+                    id = "start",
+                    symbol = "A",
+                    x = room.position.x.toFloat(),
+                    y = room.position.y.toFloat(),
+                    floor = room.position.floor,
+                    color = Color.parseColor("#F2514B"),
+                    textColor = Color.parseColor("#FFFFFF"),
+                    name = room.name,
+                )
+            )
+        } else {
+            viewState.addEndMarker(
+                RMMarker(
+                    id = "end",
+                    symbol = "Б",
+                    x = room.position.x.toFloat(),
+                    y = room.position.y.toFloat(),
+                    floor = room.position.floor,
+                    color = Color.parseColor("#636363"),
+                    textColor = Color.parseColor("#FFFFFF"),
+                    name = room.name,
+                )
+            )
+        }
     }
 
     fun back() {
